@@ -64,7 +64,7 @@ DATABASES = {
     'default': {
         'ENGINE': os.getenv('DB_ENGINE', 'mysql.connector.django'),
         'NAME': os.getenv('DB_NAME', 'app_db'),
-        'USER': os.getenv('DB_USE', 'app_user'),
+        'USER': os.getenv('DB_USER', 'app_user'),
         'PASSWORD': os.getenv('DB_PASSWORD', '1234'),
         'HOST': os.getenv('DB_HOST', 'db'),  # You can use a different host if your MySQL server is on a remote machine.
         'PORT': os.getenv('DB_PORT', '3306'),  # Leave this empty to use the default MySQL port (3306).
